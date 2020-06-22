@@ -9,7 +9,7 @@ function displayDog(responseJson) {
 
 function getBreedPic() {
   let selectedBreed = $("#breed").val();
-  let breed = selectedBreed.toLowerCase();
+  let breed = selectedBreed.toLowerCase().split(" ").join("-");
   console.log(breed);
   fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
     .then(response => response.json())
