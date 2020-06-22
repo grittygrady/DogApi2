@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
